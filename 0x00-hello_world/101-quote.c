@@ -3,7 +3,7 @@
  *main - a program that prints out a quote
  *Return: 1 (success)
 */
-char main(void)
+int main(void)
 {
 printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 return (1);
