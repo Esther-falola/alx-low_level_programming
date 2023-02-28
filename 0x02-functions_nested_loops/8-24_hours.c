@@ -1,23 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints all the numbers of base 16 in lowercase,
- * followed by a new line
- * Return: Always 0 (Success)
- */
-int main(void)
+* jack_bauer - prints every minute of the day of Jack Bauer
+* starting from 00:00 to 23:59
+*/
+void jack_bauer(void)
 {
-	int n;
-	char ch;
+int i, j;
 
-	for (n = 48; n < 58; n++)
-	{
-		putchar(n);
-	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
-	}
-	putchar('\n');
-	return (0);
+i = 0;
+
+
+while (i < 24)
+{
+j = 0;
+while (j < 60)
+{
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
+_putchar(':');
+_putchar((j / 10) + '0');
+_putchar((j % 10) + '0');
+_putchar('\n');
+j++;
+}
+i++;
+}
 }

@@ -1,19 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints all single digit numbers of base 10 starting from 0,
- * followed by a new line, using putchar
- * Return: Always 0 (Success)
- */
-int main(void)
+* _abs - computes the absolute value of an integer
+* @n: the int to check
+* Return: the absolute value of int
+*/
+int _abs(int n)
 {
-	int n;
-
-	for (n = 48; n < 58; n++)
-	{
-		putchar(n);
-	}
-	putchar('\n');
-	return (0);
+if (n >= 0)
+{
+return (n);
 }
-
+return (-n);
+}
