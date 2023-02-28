@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-* add - adds two integers and returns the result
-* @a: int to be added to b
-* @b: int to be added to a
-* Return: sum of a and b
+* print_alphabet - print all alphabet in lowercase
 */
-int add(int a, int b)
+
+
+void print_alphabet(void)
 {
-int c;
+char letter;
 
 
-c = a + b;
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
 
 
-return (c);
+_putchar('\n');
 }
